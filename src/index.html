@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Caio-Italo</title>
+    <link rel="icon" href="/src/images/favicon.ico" />
+  </head>
+  <body>
+    <!--MAIN SECTION-->
+    <section id="Home" class="h-screen bg-gradient-to-b from-color2 to-color3">
+      <nav
+        class="text-white bg-gradient-to-b from-color1 to-color2 border-b-2 border-b-slate-500 font-bold text-2xl"
+      >
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <!-- logo -->
+            <div class="py-7">
+              <a href="#index.html" class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-8 text-yellow-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                  />
+                </svg>
+                <span class="hover:text-yellow-400 duration-300">
+                  Caio-Italo</span
+                ></a
+              >
+            </div>
+            <!-- right side nav -->
+            <div class="hidden py-7 tracking-wider md:block">
+              <a
+                href="#Home"
+                class="mr-6 hover:border-b-4 border-yellow-400 duration-100"
+                >Home</a
+              >
+              <a
+                href="#About"
+                class="mr-6 hover:border-b-4 border-yellow-400 duration-100"
+                >About</a
+              >
+              <a
+                href="#Projects"
+                class="hover:border-b-4 border-yellow-400 duration-100"
+                >Projects</a
+              >
+            </div>
+            <!--Mobile button-->
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 hover:text-yellow-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile -->
+        <div
+          class="mobile-menu md:hidden px-4 text-sm bg-gradient-to-b from-color2 to-color1"
+        >
+          <a href="#Home" class="block py-2 hover:text-yellow-400">Home</a>
+          <a href="#About" class="block py-2 hover:text-yellow-400">About</a>
+          <a href="#Projects" class="block py-2 hover:text-yellow-400"
+            >Projects</a
+          >
+        </div>
+      </nav>
+
+      <!--LEFT SIDE HOME-->
+      <div
+        class="text-slate-300 font-extrabold flex-col items-center text-center justify-center text-4xl tracking-wider mt-44 md:text-6xl lg:mt-0 lg:text-left lg:absolute lg:top-1/3 lg:left-60"
+      >
+        <h1 class="mb-2">Welcome,</h1>
+        <h1 class="mb-2">I'm Caio Italo.</h1>
+        <span id="myText" class="text-yellow-400"></span>
+      </div>
+      <!--RIGHT SIDE HOME-->
+      <div class="hidden lg:flex items-end justify-end lg:mr-48 lg:mt-24">
+        <img
+          src="/src/images/man-coding.png"
+          class="w-80 h-80"
+          alt="man-coding-img"
+        />
+      </div>
+      <!--BUTTONS-->
+      <div
+        class="flex items-center justify-center pt-10 text-2xl gap-10 tracking-wider lg:pt-0 lg:items-end lg:justify-end lg:mr-44"
+      >
+        <a
+          href="#"
+          class="flex lg:inline-flex items-center bg-color1 text-white px-3 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
+        >
+          <img
+            src="/src/images/linkedin.png"
+            alt="LinkedIn-icon"
+            class="w-6 h-6 mr-2"
+          />
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="#"
+          class="flex items-center bg-color1 text-white px-7 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
+        >
+          <img
+            src="/src/images/github-sign.png"
+            alt="github-icon"
+            class="w-6 h-6 mr-2"
+          />
+          <span> Github</span>
+        </a>
+      </div>
+    </section>
+    <!--ABOUT ME SECTION-->
+    <section id="About" class="bg-gradient-to-b from-color3 to-color4">
+      <div
+        class="text-center flex flex-col items-center justify-center text-slate-300 container mx-auto py-24 gap-5 lg:gap-20 lg:flex-row lg:text-left xl:px-36"
+      >
+        <!--IMAGE OF ME-->
+        <div>
+          <img
+            src="./images/me.jpeg"
+            class="rounded-2xl w-64 h-64 lg:w-80 lg:h-80"
+            alt="an-img-of-me"
+          />
+        </div>
+        <!--ABOUT ME DESCRIPTION-->
+        <div class="leading-7 tracking-wider w-4/5 lg:w-3/5">
+          <h1 class="text-4xl font-bold text-yellow-400">About me</h1>
+          <h2 class="text-lg font-bold tracking-wide my-3">
+            Fortaleza, Brazil
+          </h2>
+          <p class="font-medium">
+            Hello there! I'm 18 years old, I am a young Programmer who is
+            passionate by Web development, I've been studying Front-End
+            development since April of 2022, I created a few projects using
+            technologies such as HTML, CSS, TAILWIND CSS and JAVASCRIPT, and I
+            learned them mostly by myself or throughout courses on the internet,
+            I am always excited about learnig new things and improving the
+            abilities that I have acquired already. I am still looking for my
+            first opportunity as a Front-End developer, and I inted to start
+            studying analysis and system development in college this year.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--PROJECTS SECTION-->
+    <section
+      id="Projects"
+      class="bg-gradient-to-b from-color4 to-color4 text-slate-300 pt-40"
+    >
+      <h1
+        class="text-yellow-400 font-extrabold text-3xl text-center lg:text-left lg:mx-36"
+      >
+        PROJECTS
+      </h1>
+      <div
+        class="grid grid-cols-1 place-items-center text-center gap-16 container mx-auto leading-7 tracking-wider py-20 lg:grid-cols-2 lg:text-left xl:gap-0"
+      >
+        <!--FIRST-->
+        <div class="w-4/5 lg:w-3/5">
+          <a
+            href="#index.html"
+            class="flex justify-center items-center lg:justify-start lg:items-start"
+            ><img
+              src="./images/fifer-s.jpeg"
+              alt="fifer-s-project"
+              class="w-80 h-32 rounded-md"
+          /></a>
+          <h2 class="py-5 font-bold text-yellow-400">Fifer-s</h2>
+          <p>
+            This was my first project ever, in this project I used Css,
+            Bootstrap, and HTML
+          </p>
+          <span>
+            A project made in 2022 with knowledges about Bootstrap that I
+            acquired on the Internet, this one was pretty interesting because I
+            learned a bit more of how html, css and Bootstrap works.
+          </span>
+          <a
+            href="#index.html"
+            class="flex items-center justify-center lg:items-start lg:justify-start"
+          >
+            <div class="pt-2 text-2xl tracking-wider">
+              <a
+                href="#"
+                class="flex lg:inline-flex items-center bg-color2 text-slate-300 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-yellow-400 pr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                  />
+                </svg>
+
+                <span class="font-bold">Site</span>
+              </a>
+            </div>
+          </a>
+        </div>
+        <!--SECOND-->
+        <div class="w-4/5 lg:w-3/5">
+          <a
+            href="#index.html"
+            class="flex justify-center items-center lg:justify-start lg:items-start"
+            ><img
+              src="./images/guess-my-number.jpeg"
+              alt="guess-my-number-project"
+              class="w-80 h-32 rounded-md"
+          /></a>
+          <h2 class="py-5 font-bold text-yellow-400">Guess my number</h2>
+          <p>Project built along the Jonas Schmedtmann's JavaScript course.</p>
+          <span>
+            I built only the script of the project, in this course I've started
+            to learn how DOM manipulation works and how I can implement
+            JavaScript in my projects with DOM.
+          </span>
+          <a
+            href="#index.html"
+            class="flex items-center justify-center lg:items-start lg:justify-start"
+          >
+            <div class="pt-2 text-2xl tracking-wider">
+              <a
+                href="#"
+                class="flex lg:inline-flex items-center bg-color2 text-slate-300 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-yellow-400 pr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                  />
+                </svg>
+
+                <span class="font-bold">Site</span>
+              </a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-color4 text-slate-300 inset-x-0 bottom-0 border-t-2 border-yellow-400"
+    >
+      <div
+        class="flex flex-col justify-center items-center text-center text-sm gap-2 py-3"
+      >
+        <a
+          href="https://lovepik.com/images/png-coding-programming-programmer.html"
+          class="pt"
+          >Programmer Programming Png vectors by Lovepik.com</a
+        >
+        <a
+          href="https://www.flaticon.com/free-icons/linkedin"
+          title="linkedin icons"
+          >Linkedin icon created by riajulislam - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.com/free-icons/github"
+          title="github icons"
+          class=""
+          >Github icon created by Dave Gandy - Flaticon</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="/autotyping.js"></script>
+  </body>
+</html>
