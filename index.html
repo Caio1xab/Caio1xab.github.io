@@ -10,8 +10,9 @@
   <body>
     <!--MAIN SECTION-->
     <section id="Home" class="h-screen bg-gradient-to-b from-color2 to-color3">
+      <!--NAVBAR-->
       <nav
-        class="text-white bg-gradient-to-b from-color1 to-color2 border-b-2 border-b-slate-500 font-bold text-2xl"
+        class="fixed z-10 top-0 w-full bg-gradient-to-b from-color1 to-color2 border-b-2 border-b-slate-500 font-bold text-2xl"
       >
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between">
@@ -24,7 +25,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-8 text-yellow-400"
+                  class="w-6 h-8 text-color0"
                 >
                   <path
                     stroke-linecap="round"
@@ -32,7 +33,7 @@
                     d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
                   />
                 </svg>
-                <span class="hover:text-yellow-400 duration-300">
+                <span class="hover:text-color0 duration-300">
                   Caio-Italo</span
                 ></a
               >
@@ -64,7 +65,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 hover:text-yellow-400"
+                  class="w-6 h-6 text-color0"
                 >
                   <path
                     stroke-linecap="round"
@@ -80,24 +81,22 @@
         <div
           class="mobile-menu md:hidden px-4 text-sm bg-gradient-to-b from-color2 to-color1"
         >
-          <a href="#Home" class="block py-2 hover:text-yellow-400">Home</a>
-          <a href="#About" class="block py-2 hover:text-yellow-400">About</a>
-          <a href="#Projects" class="block py-2 hover:text-yellow-400"
-            >Projects</a
-          >
+          <a href="#Home" class="block py-2 hover:text-color0">Home</a>
+          <a href="#About" class="block py-2 hover:text-color0">About</a>
+          <a href="#Projects" class="block py-2 hover:text-color0">Projects</a>
         </div>
       </nav>
 
       <!--LEFT SIDE HOME-->
       <div
-        class="text-slate-300 font-extrabold flex-col items-center text-center justify-center text-4xl tracking-wider mt-44 md:text-6xl lg:mt-0 lg:text-left lg:absolute lg:top-1/3 lg:left-60"
+        class="animate-fade-in font-extrabold flex-col items-center text-center justify-center text-4xl tracking-wider pt-56 md:text-6xl lg:pt-0 lg:mt-0 lg:text-left lg:absolute lg:top-1/3 lg:left-60"
       >
         <h1 class="mb-2">Welcome,</h1>
         <h1 class="mb-2">I'm Caio Italo.</h1>
-        <span id="myText" class="text-yellow-400"></span>
+        <span id="myText" class="text-color0"></span>
       </div>
       <!--RIGHT SIDE HOME-->
-      <div class="hidden lg:flex items-end justify-end lg:mr-48 lg:mt-24">
+      <div class="hidden lg:flex items-end justify-end lg:mr-48 lg:pt-44">
         <img
           src="./images/man-coding.png"
           class="w-80 h-80"
@@ -106,37 +105,37 @@
       </div>
       <!--BUTTONS-->
       <div
-        class="flex items-center justify-center pt-10 text-2xl gap-10 tracking-wider lg:pt-0 lg:items-end lg:justify-end lg:mr-44"
+        class="animate-fade-in flex items-center justify-center pt-10 text-2xl gap-10 tracking-wider lg:pt-0 lg:items-end lg:justify-end lg:mr-44"
       >
         <a
-          href="#"
+          href="https://www.linkedin.com/in/caio-italo-a0a618262/"
           class="flex lg:inline-flex items-center bg-color1 text-white px-3 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
         >
           <img
             src="./images/linkedin.png"
             alt="LinkedIn-icon"
-            class="w-6 h-6 mr-2"
+            class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
           />
           <span>LinkedIn</span>
         </a>
 
         <a
-          href="#"
+          href="https://github.com/Caio1xab"
           class="flex items-center bg-color1 text-white px-7 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
         >
           <img
             src="./images/github-sign.png"
             alt="github-icon"
-            class="w-6 h-6 mr-2"
+            class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
           />
           <span> Github</span>
         </a>
       </div>
     </section>
     <!--ABOUT ME SECTION-->
-    <section id="About" class="bg-gradient-to-b from-color3 to-color4">
+    <section id="About" class="py-28 bg-gradient-to-b from-color3 to-color4">
       <div
-        class="text-center flex flex-col items-center justify-center text-slate-300 container mx-auto py-24 gap-5 lg:gap-20 lg:flex-row lg:text-left xl:px-36"
+        class="text-center flex flex-col items-center justify-center container mx-auto py-24 gap-5 lg:gap-20 lg:flex-row lg:text-left xl:px-36"
       >
         <!--IMAGE OF ME-->
         <div>
@@ -148,7 +147,7 @@
         </div>
         <!--ABOUT ME DESCRIPTION-->
         <div class="leading-7 tracking-wider w-4/5 lg:w-3/5">
-          <h1 class="text-4xl font-bold text-yellow-400">About me</h1>
+          <h1 class="text-4xl font-bold text-color0">About me</h1>
           <h2 class="text-lg font-bold tracking-wide my-3">
             Fortaleza, Brazil
           </h2>
@@ -156,9 +155,14 @@
             Hello there! I'm 18 years old, I am a young Programmer who is
             passionate by Web development, I've been studying Front-End
             development since April of 2022, I created a few projects using
-            technologies such as HTML, CSS, TAILWIND CSS and JAVASCRIPT, and I
+            technologies such as
+            <span class="font-semibold text-color0">Html</span>,
+            <span class="font-semibold text-color0">Css</span>,
+            <span class="font-semibold text-color0">Tailwind Css</span>,
+            <span class="font-semibold text-color0">JavaScript</span> and
+            <span class="font-semibold text-color0">Bootstrap</span> and I
             learned them mostly by myself or throughout courses on the internet,
-            I am always excited about learnig new things and improving the
+            I am always excited about learning new things and improving the
             abilities that I have acquired already. I am still looking for my
             first opportunity as a Front-End developer, and I inted to start
             studying analysis and system development in college this year.
@@ -169,10 +173,10 @@
     <!--PROJECTS SECTION-->
     <section
       id="Projects"
-      class="bg-gradient-to-b from-color4 to-color4 text-slate-300 pt-40"
+      class="bg-gradient-to-b from-color4 to-color4 py-20 lg:py-40"
     >
       <h1
-        class="text-yellow-400 font-extrabold text-3xl text-center lg:text-left lg:mx-36"
+        class="text-color0 font-extrabold text-3xl text-center lg:text-left lg:mx-36"
       >
         PROJECTS
       </h1>
@@ -189,7 +193,7 @@
               alt="fifer-s-project"
               class="w-80 h-32 rounded-md"
           /></a>
-          <h2 class="py-5 font-bold text-yellow-400">Fifer-s</h2>
+          <h2 class="py-5 font-bold text-color0">Fifer-s</h2>
           <p>
             This was my first project ever, in this project I used Css,
             Bootstrap, and HTML
@@ -206,7 +210,7 @@
             <div class="pt-2 text-2xl tracking-wider">
               <a
                 href="#"
-                class="flex lg:inline-flex items-center bg-color2 text-slate-300 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
+                class="flex lg:inline-flex items-center bg-color2 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +218,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 text-yellow-400 pr-1"
+                  class="w-6 h-6 text-color0 pr-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -238,7 +242,7 @@
               alt="guess-my-number-project"
               class="w-80 h-32 rounded-md"
           /></a>
-          <h2 class="py-5 font-bold text-yellow-400">Guess my number</h2>
+          <h2 class="py-5 font-bold text-color0">Guess my number</h2>
           <p>Project built along the Jonas Schmedtmann's JavaScript course.</p>
           <span>
             I built only the script of the project, in this course I've started
@@ -252,7 +256,7 @@
             <div class="pt-2 text-2xl tracking-wider">
               <a
                 href="#"
-                class="flex lg:inline-flex items-center bg-color2 text-slate-300 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
+                class="flex lg:inline-flex items-center bg-color2 px-3 py-2.5 border rounded-lg shadow-md hover:opacity-60 duration-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -260,7 +264,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 text-yellow-400 pr-1"
+                  class="w-6 h-6 text-color0 pr-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -276,26 +280,23 @@
         </div>
       </div>
     </section>
-    <footer
-      class="bg-color4 text-slate-300 inset-x-0 bottom-0 border-t-2 border-yellow-400"
-    >
+    <footer class="bg-color4 inset-x-0 bottom-0 border-t-2 border-yellow-400">
       <div
-        class="flex flex-col justify-center items-center text-center text-sm gap-2 py-3"
+        class="flex flex-col justify-center items-center text-center text-xs gap-2 py-2"
       >
         <a
           href="https://lovepik.com/images/png-coding-programming-programmer.html"
-          class="pt"
+          class="hover:text-color0 duration-500"
           >Programmer Programming Png vectors by Lovepik.com</a
         >
         <a
           href="https://www.flaticon.com/free-icons/linkedin"
-          title="linkedin icons"
+          class="hover:text-color0 duration-500"
           >Linkedin icon created by riajulislam - Flaticon</a
         >
         <a
           href="https://www.flaticon.com/free-icons/github"
-          title="github icons"
-          class=""
+          class="hover:text-color0 duration-500"
           >Github icon created by Dave Gandy - Flaticon</a
         >
       </div>

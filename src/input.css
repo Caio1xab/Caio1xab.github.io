@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "roboto", "sans-serif";
+    scroll-behavior: smooth;
+    color: #cbd5e1;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b1b1b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #fac800;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+}

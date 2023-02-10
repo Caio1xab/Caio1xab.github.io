@@ -120,7 +120,7 @@ var AutoTyping = (function (e) {
 
 const exampleText = ["Front-end developer.", " Freelancer"];
 const exampleTyping = new AutoTyping("#myText", exampleText, {
-  typeSpeed: 90,
+  typeSpeed: 100,
   deleteSpeed: 110,
   waitBeforeDelete: 2000,
   waitBetweenWords: 500,
