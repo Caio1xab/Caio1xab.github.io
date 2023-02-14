@@ -8,9 +8,8 @@
     <link rel="icon" href="./images/favicon.ico" />
   </head>
   <body>
-    <!--MAIN SECTION-->
-    <section id="Home" class="h-screen bg-gradient-to-b from-color2 to-color3">
-      <!--NAVBAR-->
+    <!--NAVBAR-->
+    <header>
       <nav
         class="fixed z-10 top-0 w-full bg-gradient-to-b from-color1 to-color2 border-b-2 border-b-slate-500 font-bold text-2xl"
       >
@@ -65,7 +64,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 text-color0"
+                  class="w-10 h-10 text-color0"
                 >
                   <path
                     stroke-linecap="round"
@@ -79,58 +78,63 @@
         </div>
         <!-- mobile -->
         <div
-          class="mobile-menu hidden px-4 text-sm bg-gradient-to-b from-color2 to-color1"
+          class="mobile-menu hidden md:hidden shadow-lg shadow-color0 px-4 text-center  text-sm bg-gradient-to-b from-color2 to-color1"
         >
-          <a href="#Home" class="block py-2 hover:text-color0">Home</a>
-          <a href="#About" class="block py-2 hover:text-color0">About</a>
-          <a href="#Projects" class="block py-2 hover:text-color0">Projects</a>
+          <a href="#Home" class="block py-2 hover:bg-color4 hover:text-color0 duration-500">Home</a>
+          <a href="#About" class="block py-2 hover:bg-color4 hover:text-color0 duration-500">About</a>
+          <a href="#Projects" class="block py-2 hover:bg-color4 hover:text-color0 duration-500 ">Projects</a>
         </div>
       </nav>
+    </header>
 
+    <!--HOME-->
+    <section id="Home" class="flex flex-col justify-center items-center text-center h-screen lg:px-20  gap-6 lg:gap-80 bg-gradient-to-b from-color2 to-color3 lg:flex-row lg:justify-between lg:text-left">
       <!--LEFT SIDE HOME-->
       <div
-        class="animate-fade-in font-extrabold flex-col items-center text-center justify-center text-4xl tracking-wider pt-56 md:text-6xl lg:pt-0 lg:mt-0 lg:text-left lg:absolute lg:top-1/3 lg:left-60"
+        class=" animate-fade-in w-full lg:w-3/4 font-extrabold text-4xl relative lg:left-40 tracking-wider md:text-6xl "
       >
-        <h1 class="mb-2">Welcome,</h1>
-        <h1 class="mb-2">I'm Caio Italo.</h1>
-        <span id="myText" class="text-color0"></span>
+        <h1>Welcome,</h1>
+        <h2>I'm Caio Italo.</h1>
+        <span class="myText text-color0"></span>
+        <span class="cursor">|</span>
       </div>
       <!--RIGHT SIDE HOME-->
-      <div class="hidden lg:flex items-end justify-end lg:mr-48 lg:pt-44">
+      <div class="animate-fade-in w-full lg:w-2/4">
         <img
           src="./images/man-coding.png"
-          class="w-80 h-80"
+          class="hidden lg:block w-80 h-80"
           alt="man-coding-img"
         />
-      </div>
-      <!--BUTTONS-->
+       <!--BUTTONS-->
       <div
-        class="animate-fade-in flex items-center justify-center pt-10 text-2xl gap-10 tracking-wider lg:pt-0 lg:items-end lg:justify-end lg:mr-44"
+      class="text-2xl xl:pr-24 flex w-full items-center justify-center gap-7 tracking-wider"
+    >
+      <a
+        href="https://www.linkedin.com/in/caio-italo-a0a618262/"
+        class="flex items-center justify-center  bg-color1 px-2 lg:px-5 xl:px-2 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300 "
       >
-        <a
-          href="https://www.linkedin.com/in/caio-italo-a0a618262/"
-          class="flex lg:inline-flex items-center bg-color1 text-white px-3 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
-        >
-          <img
-            src="./images/linkedin.png"
-            alt="LinkedIn-icon"
-            class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
-          />
-          <span>LinkedIn</span>
-        </a>
+        <img
+          src="./images/linkedin.png"
+          alt="LinkedIn-icon"
+          class="w-6 h-6 mr-1 bg-yellow-400 rounded-xl"
+        />
+        <span>LinkedIn</span>
+      </a>
 
-        <a
-          href="https://github.com/Caio1xab"
-          class="flex items-center bg-color1 text-white px-7 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300"
-        >
-          <img
-            src="./images/github-sign.png"
-            alt="github-icon"
-            class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
-          />
-          <span> Github</span>
-        </a>
+      <a
+        href="https://github.com/Caio1xab"
+        class="flex items-center justify-center bg-color1 px-2 lg:px-5 xl:px-4 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300 lg:inline-flex"
+      >
+        <img
+          src="./images/github-sign.png"
+          alt="github-icon"
+          class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
+        />
+        <span> Github</span>
+      </a>
       </div>
+      </div>
+
     </section>
     <!--ABOUT ME SECTION-->
     <section id="About" class="py-28 bg-gradient-to-b from-color3 to-color4">
@@ -153,19 +157,20 @@
           </h2>
           <p class="font-medium">
             Hello there! I'm 18 years old, I am a young Programmer who is
-            passionate by Web development, I've been studying Front-End
+            passionate by technology, I've been studying Front-End
             development since April of 2022, I created a few projects using
             technologies such as
             <span class="font-semibold text-color0">Html</span>,
             <span class="font-semibold text-color0">Css</span>,
             <span class="font-semibold text-color0">Tailwind Css</span>,
             <span class="font-semibold text-color0">JavaScript</span> and
-            <span class="font-semibold text-color0">Bootstrap</span> and I
+            <span class="font-semibold text-color0">Bootstrap</span>, I
             learned them mostly by myself or throughout courses on the internet,
-            I am always excited about learning new things and improving the
-            abilities that I have acquired already. I am still looking for my
-            first opportunity as a Front-End developer, and I inted to start
-            studying analysis and system development in college this year.
+            I am a person who is always excited about learning new things and improving the
+            abilities that I have acquired. if there is only one ability to highlight about me, it surely would be  <span class="font-semibold text-color0">self-teaching</span>,
+            the majority part of the knowledge that I have about web development nowadays is because I'm always building projects by myself,
+            and trying to practice the things i've learned as much as I can.
+            I am still looking for my first opportunity as a Front-End developer, and I inted to go to college in the near future.
           </p>
         </div>
       </div>
@@ -200,12 +205,11 @@
             acquired on the Internet, this one was pretty interesting because I
             learned a bit more of how html, css and Bootstrap works.
           </span>
-          <a
-            href="#index.html"
-            class="flex items-center justify-center lg:justify-start"
+          <div
+            class="flex items-center justify-center text-2xl lg:justify-start"
           >
-            <div class="text-2xl">
-              <div
+
+              <a href="#"
                 class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:opacity-60 duration-300"
               >
                 <svg
@@ -224,9 +228,9 @@
                 </svg>
 
                 <span class="font-bold">Site</span>
-              </div>
-            </div>
-          </a>
+              </a>
+          </div>
+          
         </div>
         <!--SECOND-->
         <div>
@@ -245,35 +249,32 @@
             to learn how DOM manipulation works and how I can implement
             JavaScript in my projects with DOM.
           </span>
-          <a
-          href="#index.html"
-          class="flex items-center justify-center lg:justify-start"
-        >
-          <div class="text-2xl">
-            <div
-              class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:opacity-60 duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-color0 pr-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                />
-              </svg>
+          <div
+            class="flex items-center justify-center text-2xl lg:justify-start"
+          >
 
-              <span class="font-bold">Site</span>
-            </div>
+              <a href="#"
+                class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:opacity-60 duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-color0 pr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                  />
+                </svg>
+
+                <span class="font-bold">Site</span>
+              </a>
           </div>
-        </a>
-            </div>
-          </a>
+          
         </div>
       </div>
     </section>
@@ -300,6 +301,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="/autotyping.js"></script>
   </body>
 </html>

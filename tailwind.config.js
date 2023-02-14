@@ -10,6 +10,7 @@ module.exports = {
         color3: "#144272",
         color4: "#0A2647",
       },
+
       screens: {
         sm: "480px",
       },
