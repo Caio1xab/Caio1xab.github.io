@@ -4,11 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.buttonHeader {
+  @apply flex items-center justify-center bg-color1 px-2 lg:px-5 xl:px-3 py-2 border rounded-lg shadow-md shadow-yellow-400 hover:bg-yellow-400 hover:shadow-white hover:text-color2 duration-300;
+}
+
 @layer base {
   html {
     font-family: "roboto", "sans-serif";
     scroll-behavior: smooth;
-    color: #cbd5e1;
+    color: #fff;
   }
 
   .cursor {

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Caio-Italo</title>
+    <script src="script.js" defer></script>
     <link rel="icon" href="./images/favicon.ico" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!--NAVBAR-->
     <header>
       <nav
@@ -24,7 +25,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-8 animate-pulse text-color0"
+                  class="w-6 h-8 animate-pulse text-clearYellow"
                 >
                   <path
                     stroke-linecap="round"
@@ -32,7 +33,7 @@
                     d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
                   />
                 </svg>
-                <span class="hover:text-color0 duration-300">
+                <span class="hover:text-clearYellow duration-300">
                   Caio-Italo</span
                 ></a
               >
@@ -64,7 +65,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-10 h-10 text-color0"
+                  class="w-10 h-10 text-clearYellow"
                 >
                   <path
                     stroke-linecap="round"
@@ -78,66 +79,83 @@
         </div>
         <!-- mobile -->
         <div
-          class="mobile-menu hidden md:hidden shadow-lg shadow-color0 px-4 text-center  text-sm bg-gradient-to-b from-color2 to-color1"
+          class="mobile-menu hidden md:hidden shadow-lg shadow-color0 px-4 text-center text-sm bg-gradient-to-b from-color2 to-color1"
         >
-          <a href="#Home" class="block py-2 hover:bg-color4 hover:text-color0 duration-500">Home</a>
-          <a href="#About" class="block py-2 hover:bg-color4 hover:text-color0 duration-500">About</a>
-          <a href="#Projects" class="block py-2 hover:bg-color4 hover:text-color0 duration-500 ">Projects</a>
+          <a
+            href="#Home"
+            class="block py-2 hover:bg-color4 hover:text-clearYellow duration-500"
+            >Home</a
+          >
+          <a
+            href="#About"
+            class="block py-2 hover:bg-color4 hover:text-clearYellow duration-500"
+            >About</a
+          >
+          <a
+            href="#Projects"
+            class="block py-2 hover:bg-color4 hover:text-clearYellow duration-500"
+            >Projects</a
+          >
         </div>
       </nav>
     </header>
 
     <!--HOME-->
-    <section id="Home" class="flex flex-col justify-center items-center text-center h-screen lg:px-20  gap-6 lg:gap-80 bg-gradient-to-b from-color2 to-color3 lg:flex-row lg:justify-between lg:text-left">
-      <!--LEFT SIDE HOME-->
+    <section id="Home" class="bg-gradient-to-b from-color2 to-color3 h-screen">
+      <!--Main Home-->
       <div
-        class=" animate-fade-in w-full lg:w-3/4 font-extrabold text-4xl relative lg:left-40 tracking-wider md:text-6xl "
+        class="flex flex-col justify-center text-center mt-20 pt-36 space-y-12 lg:px-20 lg:flex-row lg:text-left lg:space-y-0 lg:space-x-52"
       >
-        <h1>Welcome,</h1>
-        <h2>I'm Caio Italo.</h1>
-        <span class="myText text-color0"></span>
-        <span class="cursor">|</span>
-      </div>
-      <!--RIGHT SIDE HOME-->
-      <div class="animate-fade-in w-full lg:w-2/4">
-        <img
-          src="./images/man-coding.png"
-          class="hidden lg:block w-80 h-80"
-          alt="man-coding-img"
-        />
-       <!--BUTTONS-->
-      <div
-      class="text-2xl xl:pr-24 flex w-full items-center justify-center gap-7 tracking-wider"
-    >
-      <a
-        href="https://www.linkedin.com/in/caio-italo-a0a618262/"
-        class="flex items-center justify-center  bg-color1 px-2 lg:px-5 xl:px-2 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300 "
-      >
-        <img
-          src="./images/linkedin.png"
-          alt="LinkedIn-icon"
-          class="w-6 h-6 mr-1 bg-yellow-400 rounded-xl"
-        />
-        <span>LinkedIn</span>
-      </a>
+        <!--LEFT SIDE HOME-->
+        <div
+          class="animate-fade-in w-full font-extrabold text-4xl relative mt-12 tracking-wider md:text-6xl lg:left-40 lg:w-3/4"
+        >
+          <h1>Welcome,</h1>
+          <h2>I'm Caio Italo.</h2>
+          <span class="myText text-clearYellow"></span>
+          <span class="cursor">|</span>
+        </div>
+        <!--RIGHT SIDE HOME-->
+        <div class="animate-fade-in w-full lg:w-2/4">
+          <img
+            src="./images/man-coding.png"
+            class="hidden lg:block w-80 h-80 ml-6"
+            alt="man-coding-img"
+          />
+          <!--BUTTONS-->
+          <div
+            class="text-2xl xl:pr-24 flex w-full items-center justify-center space-x-5 tracking-wider"
+          >
+            <a
+              href="https://www.linkedin.com/in/caio-italo-a0a618262/"
+              class="buttonHeader"
+            >
+              <img
+                src="./images/linkedin.png"
+                alt="LinkedIn-icon"
+                class="w-6 h-6 mr-1 rounded-xl"
+              />
+              <span class="font-bold">LinkedIn</span>
+            </a>
 
-      <a
-        href="https://github.com/Caio1xab"
-        class="flex items-center justify-center bg-color1 px-2 lg:px-5 xl:px-4 py-2.5 border rounded-lg shadow-md shadow-yellow-400 hover:opacity-60 duration-300 lg:inline-flex"
-      >
-        <img
-          src="./images/github-sign.png"
-          alt="github-icon"
-          class="w-6 h-6 mr-2 bg-yellow-400 rounded-xl"
-        />
-        <span> Github</span>
-      </a>
+            <a
+              href="https://github.com/Caio1xab"
+              class="buttonHeader lg:px-5 xl:px-4 py-2.5"
+            >
+              <img
+                src="./images/github-sign.png"
+                alt="github-icon"
+                class="w-6 h-6 mr-2 rounded-xl"
+              />
+              <span class="font-bold"> Github</span>
+            </a>
+          </div>
+        </div>
       </div>
-      </div>
-
     </section>
+
     <!--ABOUT ME SECTION-->
-    <section id="About" class="py-28 bg-gradient-to-b from-color3 to-color4">
+    <section id="About" class="pb-28 bg-gradient-to-b from-color3 to-color4">
       <div
         class="text-center flex flex-col items-center justify-center container mx-auto py-24 gap-5 lg:gap-20 lg:flex-row lg:text-left xl:px-36"
       >
@@ -151,155 +169,508 @@
         </div>
         <!--ABOUT ME DESCRIPTION-->
         <div class="leading-7 tracking-wider w-4/5 lg:w-3/5">
-          <h1 class="text-4xl font-bold text-color0">About me</h1>
+          <h1 class="text-4xl font-bold text-clearYellow">About me</h1>
           <h2 class="text-lg font-bold tracking-wide my-3">
             Fortaleza, Brazil
           </h2>
           <p class="font-medium">
             Hello there! I'm 18 years old, I am a young Programmer who is
-            passionate by technology, I've been studying Front-End
-            development since April of 2022, I created a few projects using
-            technologies such as
-            <span class="font-semibold text-color0">Html</span>,
-            <span class="font-semibold text-color0">Css</span>,
-            <span class="font-semibold text-color0">Tailwind Css</span>,
-            <span class="font-semibold text-color0">JavaScript</span> and
-            <span class="font-semibold text-color0">Bootstrap</span>, I
+            passionate by technology, I've been studying Front-End development
+            since April of 2022, I created a few projects using technologies
+            such as
+            <span class="font-semibold text-clearYellow">Html</span>,
+            <span class="font-semibold text-clearYellow">Css</span>,
+            <span class="font-semibold text-clearYellow">Tailwind Css</span>,
+            <span class="font-semibold text-clearYellow">JavaScript</span> and
+            <span class="font-semibold text-clearYellow">Bootstrap</span>, I
             learned them mostly by myself or throughout courses on the internet,
-            I am a person who is always excited about learning new things and improving the
-            abilities that I have acquired. if there is only one ability to highlight about me, it surely would be  <span class="font-semibold text-color0">self-teaching</span>,
-            the majority part of the knowledge that I have about web development nowadays is because I'm always building projects by myself,
-            and trying to practice the things i've learned as much as I can.
-            I am still looking for my first opportunity as a Front-End developer, and I inted to go to college in the near future.
+            I am a person who is always excited about learning new things and
+            improving the abilities that I already have acquired. if there is
+            only one ability to highlight about me, it surely would be
+            <span class="font-semibold text-clearYellow">self-teaching</span>,
+            the majority part of the knowledge that I have about web development
+            nowadays is because I'm always building projects by myself, and
+            trying to practice the things i've learned as much as I can. I am
+            still looking for my first opportunity as a Front-End developer. I'm
+            currently graduating in the university of UNOPAR (Universidade Norte
+            do Paraná) in the course of system analysis and development.
           </p>
         </div>
       </div>
     </section>
+
     <!--PROJECTS SECTION-->
     <section
       id="Projects"
-      class="bg-gradient-to-b from-color4 to-color4  py-24"
+      class="bg-gradient-to-b from-color4 to-color4 py-24 space-y-20"
     >
       <h1
-        class="text-color0 font-extrabold text-3xl flex justify-center text-center lg:justify-center lg:text-left"
+        class="text-clearYellow font-extrabold text-3xl flex justify-center text-center lg:justify-center"
       >
         PROJECTS
       </h1>
+
+      <!--Main Container-->
       <div
-        class="grid grid-cols-1 text-center gap-16 container mx-auto leading-7 text-wider py-20 w-3/4 md:w-2/4 lg:w-4/5 lg:grid-cols-2 lg:text-left"
+        class="container mx-auto flex flex-col justify-center items-center space-y-10 px-7"
       >
-        <!--FIRST-->
-        <div>
-          <a
-            href="#index.html"
-            class="flex justify-start items-center lg:justify-start lg:items-start"
-            ><img
-              src="./images/fifer-s.jpeg"
-              alt="fifer-s-project"
-              class="w-full h-32 rounded-md duration-500 hover:scale-110"
-          /></a>
-          <h2 class="py-5 font-bold text-color0">Fifer-s</h2>
-          <p>This was my first project, I used Css, Bootstrap, and Html.</p>
-          <span>
-            A project made in 2022 with knowledges about Bootstrap that I
-            acquired on the Internet, this one was pretty interesting because I
-            learned a bit more of how html, css and Bootstrap works.
-          </span>
-          <div
-            class="flex items-center justify-center text-2xl lg:justify-start"
-          >
+        <!--#1 PROJECTS ROW-->
+        <div
+          class="flex flex-col mx-auto space-y-12 md:flex-row md:space-x-20 md:space-y-0"
+        >
+          <!--1# PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/Fifer-s/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="./images/fifer-s.jpeg"
+                  alt="fifer-s-project"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
 
-              <a href="#"
-                class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:opacity-60 duration-300"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-color0 pr-1"
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Fifer-s</h2>
+                <h5 class="text-xl font-semibold">Html | Bootstrap | Css</h5>
+              </div>
+              <span class="max-w-2xl">
+                A project made in 2022 with some knowledges of Bootstrap that I
+                acquired on the Internet, this one was pretty interesting
+                because I learned a bit more of how html, css and Bootstrap
+                works.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/Fifer-s/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
 
-                <span class="font-bold">Site</span>
-              </a>
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
           </div>
-          
+          <!--#2 PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/shortly/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/shortly.jpeg"
+                  alt="shortlyIMG"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Shortly</h2>
+                <h5 class="text-xl font-semibold">
+                  Html | TailwindCSS | JavaScript
+                </h5>
+              </div>
+
+              <span class="max-w-2xl">
+                Shortly is a modern website created to short links that you
+                input in a certain area of the page. It has a modern looking and
+                it goes straightly into the point of what it can be used to, and
+                the service that it provides to the user.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/shortly/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <!--SECOND-->
-        <div>
-          <a
-            href="#index.html"
-            class="flex justify-start items-center lg:justify-start lg:items-start"
-            ><img
-              src="./images/guess-my-number.jpeg"
-              alt="guess-my-number-project"
-              class="w-full h-32 rounded-md duration-500 hover:scale-110"
-          /></a>
-          <h2 class="py-5 font-bold text-color0">Guess my number</h2>
-          <p>Project built along the Jonas Schmedtmann's JavaScript course.</p>
-          <span>
-            I built only the script of the project, in this course I've started
-            to learn how DOM manipulation works and how I can implement
-            JavaScript in my projects with DOM.
-          </span>
-          <div
-            class="flex items-center justify-center text-2xl lg:justify-start"
-          >
 
-              <a href="#"
-                class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:opacity-60 duration-300"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6 text-color0 pr-1"
+        <!--#2 PROJECTS ROW-->
+        <div
+          class="flex flex-col mx-auto space-y-12 md:flex-row md:space-x-20 md:space-y-0"
+        >
+          <!--1# PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/bookmark/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/bookMark.jpeg"
+                  alt="fifer-s-project"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Bookmark</h2>
+                <h5 class="text-xl font-semibold">
+                  Html | TailwindCSS | JavaScript
+                </h5>
+              </div>
+              <span class="max-w-2xl">
+                Bookmark's website is a page of an applicattion which is used to
+                share, speed up, and make bookmarks. it provides the user many
+                utilities when it comes to bookmarking things, organization is
+                one of the great points of it.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/bookmark/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
 
-                <span class="font-bold">Site</span>
-              </a>
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
           </div>
-          
+          <!--#2 PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/loopstudios/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/loopstudios.jpeg"
+                  alt="loopstudiosImg"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Loopstudios</h2>
+                <h5 class="text-xl font-semibold">
+                  Html | TailwindCSS | JavaScript
+                </h5>
+              </div>
+              <span class="max-w-2xl">
+                This is a website of a kind of company which works in the area
+                of VR(virtual reality), the website shows the user many of the
+                experiences that someone may have while using products of the
+                company. Loopstudios is well known by making experiences that
+                deliver.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/loopstudios/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--#3 PROJECTS ROW-->
+        <div
+          class="flex flex-col mx-auto space-y-12 md:flex-row md:space-x-20 md:space-y-0"
+        >
+          <!--1# PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/clipboard-page/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/clipboard.jpeg"
+                  alt="clipboardIMG"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Clipboard</h2>
+                <h5 class="text-xl font-semibold">Html | TailwindCSS</h5>
+              </div>
+              <span class="max-w-2xl">
+                Clipboard allows its users to keep track and organize inumeral
+                things that the user copies, it provides Quick Search, iCloud
+                sync, and easy access to all your snippets history. Clipboard is
+                available on iOS and Mac.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/clipboard-page/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--#2 PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/guessMyNumber/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="./images/guess-my-number.jpeg"
+                  alt="fifer-s-project"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Guess My Number</h2>
+                <h5 class="text-xl font-semibold">Html | CSS | JavaScript</h5>
+              </div>
+              <span class="max-w-2xl">
+                Guess My Number is a quick, fun, and easy opening game to lead
+                with a small group of people. People try to guess the number
+                you’re thinking of in the fewest number of guesses possible.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/guessMyNumber/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--#4 PROJECTS ROW-->
+        <div
+          class="flex flex-col mx-auto space-y-12 md:flex-row md:space-x-20 md:space-y-0"
+        >
+          <!--1# PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/fylo/"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/fylo.jpeg"
+                  alt="fyloIMG"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Fylo</h2>
+                <h5 class="text-xl font-semibold">
+                  Html | TailwindCSS | JavaScript
+                </h5>
+              </div>
+              <span class="max-w-2xl">
+                A website of an app which gives the user access to all the files
+                that are saved. It is secure to use, the files can be accessed
+                in any device you log your account in, and you can easily learn
+                how to use the app properly.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/fylo/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--#2 PROJECT-->
+          <div class="max-w-xl">
+            <div id="img-0">
+              <a
+                href="https://caio1xab.github.io/pigGameDice"
+                class="flex justify-start items-center lg:justify-start lg:items-start"
+                ><img
+                  src="images/pigGame.jpeg"
+                  alt="pigGame"
+                  class="h-32 w-full md:h-3/4 rounded-md duration-500 hover:scale-105"
+              /></a>
+            </div>
+
+            <!--Text + button-->
+            <div class="flex flex-col space-y-4">
+              <div class="text-clearYellow pt-4">
+                <h2 class="text-2xl font-bold">Pig Game</h2>
+                <h5 class="text-xl font-semibold">
+                  Html | TailwindCSS | JavaScript
+                </h5>
+              </div>
+              <span class="max-w-2xl">
+                Pig is a simple dice game, Players take turns to roll a single
+                dice as many times as they wish, adding all roll results to a
+                running total, but losing their gained score for the turn if
+                they roll a 1.
+              </span>
+              <div class="flex items-center text-2xl justify-start">
+                <a
+                  href="https://caio1xab.github.io/pigGameDice/"
+                  class="flex items-center bg-color2 px-5 py-2 border rounded-lg shadow-md hover:scale-105 hover:bg-clearYellow duration-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 text-clearYellow group-hover:text-white pr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                    />
+                  </svg>
+
+                  <span class="font-bold duration-300">Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer class="bg-color4 inset-x-0 bottom-0 border-t-2 border-yellow-400">
+
+    <footer class="bg-color4 bottom-0 border-t-2 border-yellow-400">
       <div
         class="flex flex-col justify-center items-center text-center text-xs gap-2 py-2"
       >
         <a
           href="https://lovepik.com/images/png-coding-programming-programmer.html"
-          class="hover:text-color0 duration-500"
+          class="hover:text-clearYellow duration-500"
           >Programmer Programming Png vectors by Lovepik.com</a
         >
         <a
           href="https://www.flaticon.com/free-icons/linkedin"
-          class="hover:text-color0 duration-500"
+          class="hover:text-clearYellow duration-500"
           >Linkedin icon created by riajulislam - Flaticon</a
         >
         <a
           href="https://www.flaticon.com/free-icons/github"
-          class="hover:text-color0 duration-500"
+          class="hover:text-clearYellow duration-500"
           >Github icon created by Dave Gandy - Flaticon</a
         >
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
